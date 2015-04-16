@@ -1,8 +1,8 @@
 <?php
 
-namespace common\behaviors;
+namespace andreykluev\checkowner;
 
-use yii;
+use Yii;
 use yii\base\Behavior;
 use yii\web\HttpException;
 use yii\web\Controller;
