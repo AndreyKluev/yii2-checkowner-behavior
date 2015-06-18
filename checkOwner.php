@@ -50,7 +50,7 @@ class checkOwner extends Behavior
                 throw new HttpException(404, 'Model not found');
 
             // Проверяем владельца
-            if ($model[$ownerField] !== Yii::$app->user->identity->getId())
+            if ($model[$ownerField] !== Yii::$app->getUser()->getId())
                 throw new HttpException(403, 'Access denied');
         }
     }
